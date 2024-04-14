@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotator images</title>
+    <link rel="stylesheet" href="./plugin/jquery.hislide.css">
+    <style>
+        .hi-slide .hi-prev, .hi-slide .hi-next{
+            top: 56%;
+             height: 40px;
+             margin-top: -40px;
+             border-radius: 50px;
+             line-height: 42px;
+             background-color: crimson;
+             font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-area hi-slide">
+        <div class="hi-prev"></div>
+        <div class="hi-next"></div>
+        <ul>
+            <li><img src="https://picsum.photos/200/300" /></li>
+            <li><img src="https://picsum.photos/200/300" /></li>
+            <li><img src="https://picsum.photos/200/300" /></li>
+            <li><img src="https://picsum.photos/200/300" /></li>
+            <li><img src="https://picsum.photos/200/300" /></li>
+            <li><img src="https://picsum.photos/200/300" /></li>
+            <li><img src="https://picsum.photos/200/300" /></li>
+         
+        </ul>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="./plugin/jquery.hislide.js"></script>
+<script>
+    $('.img-area').hiSlide();
+</script>
+</html>
